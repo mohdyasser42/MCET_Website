@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title> student corner </title>
+    <script src="comments.js"></script>
+    <link rel="stylesheet" href="comments.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+</head>
+<body>
+    <!-- headers -->
+    <section class="header">
+        <nav>
+                <a href="index.html"><img src="title.png" alt="MCET LOGO" class="title_png"></a>
+                <!-- all the title links provided here-->
+                <div class="nav_links" id="navLinks">
+                        <i class="fa fa-times fa-2x" aria-hidden="true" onclick="hideMenu()"></i>
+                        <ul>
+                                    <li><a href="../index.html"> HOME </a></li>
+                                    <li><a href="../course.html"> COURSES </a></li>
+                                    <li><a href="../department.html">DEPARTMENT </a></li>
+                                    <li><a href="comment_forum.html"> STUDENT CORNER </a></li>
+                                    <li><a href="../contact_us.html"> CONTACT US </a></li>
+                                  <li><a href="../about_us.html"> ABOUT US</a></li>
+                        </ul>
+                </div>
+                <i class="fa fa-bars fa-2x"aria-hidden="true" id="menuOpen" onclick="showMenu()"></i>
+            </nav>
+    </section>
+
+    <!-- main forum sections -->
+    <section class="comment-box">
+        <div class="comment-head">
+            <h1>BE (COMPUTER SCIENCE ENGINEERING)</h1>
+            <br>
+            <h3>V Semester Live Comment Forum.</h3>
+            <br>
+        </div>	
+        <div class="container">	
+                <br>	
+                <br>
+                <br>
+                <form method="POST" id="commentForm">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name" required />
+                    </div>
+                    <div class="form-group">
+                        <textarea name="comment" id="comment" class="form-control" placeholder="Enter Comment" rows="5" required></textarea>
+                    </div>
+                    <span id="message"></span>
+                    <br>
+                    <div class="form-group">
+                        <input type="hidden" name="commentId" id="commentId" value="0" />
+                        <input type="submit" name="submit" id="submit" class="btn btn-primary" value="Post Comment" />
+                    </div>
+                </form>	
+                <br>
+                <div>
+                <h3>Forum Rules:</h3>
+                <ul class="rules">
+                    <li>No Spam / Advertising / Self-promote in this forum.</li>
+                    <li>Do not post “offensive” posts, links or images.</li>
+                    <li>Do not cross post questions.</li>
+                    <li>Do not PM users asking for help.</li>
+                    <li>Remain respectful of other members at all times.</li>
+                </ul>
+                </div>	
+                <br>
+            <div id="showComments"></div>   
+        </div>
+    </section>
+
+    <!-- Social Links -->
+<section class="social_links">
+    
+    <h3> CONNECT US THROUGH <span style="color: orange;"> Social Media</span></h3>
+    <br>
+   	<p> Follow us on below links to stay updated about college notifications</p>
+    <br>
+        <div class="icons">
+                <a href="https://www.facebook.com/Methodistofficial/" target="_blank"><i class="fa fa-facebook fa-4x" id="facebook"></i></a>
+                <a href="https://instagram.com/mcethyderabad?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram fa-4x" id="instagram"></i></a>
+                <a href="https://twitter.com/mcethyderabad" target="_blank"><i class="fa fa-twitter fa-4x" id="twitter"></i></a>
+                <a href="https://www.linkedin.com/in/methodist-college-engineering-and-technology-alumni-47b2a41a2" target="_blank"><i class="fa fa-linkedin fa-4x" id="linkedin"></i></a>
+        </div> 
+   </section>
+   
+  <!-- COPYRIGHTS -->
+  <section class="copyright">
+   	<hr>
+   	<br>
+   		<h4>© METHODIST COLLEGE OF<br> <span style="color: orange">ENGINEERING & TECHNOLOGY, 2021.</span>	</h4>
+   		<p>All rights reserved.</p>
+   		<br>
+   		<p class="signature"> Made with <i class="fa fa-heart-o"></i> by PraVeEn and YaSSeR</p>
+   </section> 
+   
+	<!-- js file for toggle -->
+	<script type="text/javascript">
+		var navLinks = document.getElementById("navLinks");
+		
+		function showMenu(){
+				navLinks.style.right = "0";
+		}
+		
+		function hideMenu(){
+				navLinks.style.right = "-200px";
+		}
+		
+	</script>
+    
+</body>
+</html>

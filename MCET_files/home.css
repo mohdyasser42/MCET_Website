@@ -1,0 +1,430 @@
+*{
+	margin: 0;
+	padding: 0;
+	/* font-family: 'Source Sans Pro', sans-serif; */
+	font-family: 'Raleway', sans-serif;
+}
+
+body{
+		background: #ffffe6;
+}
+
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("source_files/background.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+    height: 150px;
+}
+
+.nav_links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav_links ul li a{
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.nav_links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: orange;
+    display: block;
+    margin: auto;   
+    transition: 0.45s; 
+}
+
+.nav_links ul li:hover::after{
+    width: 100%;
+}
+
+/*about clg*/
+.text_box{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	left: 7%;
+	transition: translate(-50%, -50%);
+	text-align: center;
+}
+
+.text_box h1{
+	font-size: 60px;
+	text-shadow: 2px 2px 5px #f44336;
+	font-family: "Times New Roman";
+	font-variant: small-caps;
+	color: orange;
+}
+
+.text_box p{
+	margin: 10px 0 40px;
+	color: #fff;
+	line-height: 1.75;
+}
+
+.know_more_button{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 15px 35px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.know_more_button:hover{
+	border: 1px solid orange;
+	background: orange;
+	transition: 1s;
+}
+
+
+/* for toggle option*/
+nav .fa{
+  display: none;
+}
+
+/* nav_links for phone response */
+@media screen and (max-width: 700px){
+	
+.text_box h1{
+	font-size: 30px;
+}
+
+nav img{
+	width: 150px;
+	height: 150px;
+	margin-left: 85px;
+}
+	
+		/* for menu bar */
+.nav_links ul li{
+	display: block;
+	}
+	
+.nav_links{
+	position: fixed;
+	background: linear-gradient(rgba(212, 141, 34), rgba(212, 141, 34));
+	height: 100vh;
+	width: 200px;
+	top: 0;
+	right: -200px;
+	text-align: left;
+	z-index: 2;
+	transition: 1s;
+	}
+	
+	/* for toggle options*/
+nav .fa{
+	display: block;
+	color: #fff;
+	margin: 30px;
+	font-size: 22px;
+	cursor: pointer;
+	}
+	
+	#menuOpen{
+		margin-top: -53px;
+		margin-right: -2px;
+	}
+	
+.nav_links ul{
+	padding: 0 20px 0 40px;
+	}
+}
+
+/* COURSES SECTION */
+.courses{
+	 width: 80%;
+	 margin: auto;
+	 text-align: center;
+	 padding-top: 100px;
+	 margin-bottom: 100px;
+}
+
+.courses h1{
+		font-size: 40px; 
+}
+
+.courses_row{
+		padding: 10px;
+		display: flex;
+		justify-content: space-between;
+		border: 1px solid white;
+		overflow: auto;
+		white-space: nowrap;
+		font-size: 17px;
+}
+
+.courses_column{
+		margin: 5px;
+		border: 1px solid white;
+		padding-top: 10px;
+		flex-basis: 31%;
+		background: #fff3f3;
+		border-radius: 10px;
+		box-sizing: border-box;
+		transition: 0.5s;
+}
+
+	.courses_column h4
+	{
+			text-transform: uppercase;
+			color: #ffa31a;
+			text-shadow: 1px 1px 1px #804000;
+	}
+	
+.courses_column p{
+		justify-content: center;
+}
+
+.courses_column:hover{
+		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* COURSES for phone response*/
+
+@media screen and (max-width: 700px)
+{
+	.courses_title{
+		font-size: 40px;
+		font-weight: 300px;
+	}
+	
+	.courses_column img{
+			width: 120px;
+			padding: 0 15px;
+	}
+	
+	.courses h1{
+			font-size: 30px;
+	}
+	
+}
+/* HIGHLIGHTS */
+.highlights{
+		width: 80%;
+		margin: auto;
+		text-align: center;
+		padding-top: 100px;
+		border: 1px solid #ffe6cc;
+		border-radius: 15px;
+		background: #fff5e6;
+		padding: 10px;
+}
+
+.highlights h1{
+			font-size: 40px;
+}
+
+.highlights h5{
+		text-align: left;
+		font-size: 18px;
+		padding: 10px;
+}
+
+.highlights p{
+	 text-align: justify;
+	 line-height: 1.5;
+	 padding: 10px;
+}
+
+.highlights .fa{
+	padding-top: 5px;
+	margin-right: 15px;
+}
+
+/*highlights for phone response*/
+@media screen and (max-width: 700px)
+{
+	.highlights{
+			padding-top: 50px;
+	}
+	
+	.highlights h1{
+			font-size: 30px;
+	}
+	
+	.highlights_description h5{
+			font-size: 20px;
+			box-sizing: border-box;
+			margin-bottom: -10px;
+	}
+	
+	.highlights p{
+			font-size: 14px;
+	}
+}
+
+/*testimonials*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonials h1{
+		font-size: 40px;
+		margin-bottom: 30px;
+}
+
+.testimonials_row{
+		display: flex;
+}
+
+.testimonials_column{
+    flex-basis: 44%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-right: 5px;
+    text-align: left;
+    background: #fff3f3;
+    padding: 23px;
+    display: flex;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.testimonials_column img{
+    height: 60px;
+    margin: 0 30px 0 5px;
+    border-radius: 50%;
+}
+
+.testimonials_column p{
+    padding: 0;
+    text-align: justify;
+    
+}
+
+.testimonials_column h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonials .fa{
+		color: #f44363;
+		text-align: none;
+}
+
+/*testimonials for phone response*/
+@media screen and (max-width: 700px){
+	
+		.testimonials_column img{
+    
+    margin-right: 15px;
+    margin-left: -15px;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .testimonials_row{
+					display: block;
+		}
+  
+  .testimonials_column p{
+  	
+  }
+  
+  .testimonials h1{
+  				font-size: 30px;
+  }
+}
+
+/*social media*/
+.social_links{
+			margin: auto;
+			text-align: center;
+			padding-top: 100px;
+}
+
+.social_links p{
+			font-size: 14px;
+}
+
+.icons .fa{
+			margin: 0 20px;
+}
+
+.icons #facebook{
+			color: #4267B2;
+}
+
+.icons #instagram{
+			color: #FB3958;
+}
+
+.icons #twitter{
+			color: #1DA1F2;
+}
+
+.icons #linkedin{
+			color: #0e76a8;
+}
+
+
+@media screen and (max-width: 700px){
+	
+			.social_links p{
+			font-size: 14px;
+		}
+			
+			.icons .fa{
+					font-size: 30px;
+			}
+}
+
+/*COPYRIGHT*/
+.copyright{
+			margin: auto;
+			text-align: center;
+			padding-top: 50px;
+}
+
+.copyright h4{
+				font-family: cursive;
+}
+
+.signature{
+			font-family: 'Architects Daughter', cursive;
+}
+
+.signature p{
+			font-size: 15px;
+}
+
+.signature .fa{
+			color: white;
+			background: red;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="MCET_files/contact_us.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+  </head>
+  <body>
+  	<!-- -->
+  	<!--header consisting of title, links and about-->
+  	<section class="header">
+  		<nav>
+  				<a href="index.html"><img src="MCET_files/source_files/title.png" alt="MCET LOGO" class="title_png"></a>
+  				<!-- all the title links provided here-->
+  				<div class="nav_links" id="navLinks">
+  						<i class="fa fa-times fa-2x" aria-hidden="true" onclick="hideMenu()"></i>
+  						<ul>
+  									<li><a href="index.html"> HOME </a></li>
+  									<li><a href="course.html"> COURSES </a></li>
+  									<li><a href="department.html">DEPARTMENT </a></li>
+  									<li><a href="comment forum/comment_forum.html"> STUDENT CORNER </a></li>
+  									<li><a href="contact_us.html"> CONTACT US </a></li>
+                                    <li><a href="about_us.html"> ABOUT US</a></li>
+  						</ul>
+  				</div>
+  				<i class="fa fa-bars fa-2x
+  				" aria-hidden="true" id="menuOpen" onclick="showMenu()"></i>
+  			</nav>
+  	</section>
+  	<br>
+  		
+  		<!-- location -->
+  		<section class="location">
+  			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.409404806322!2d78.47628301435331!3d17.392129407247324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99d770ea4805%3A0x1cf8c383742619b4!2sMethodist%20College%20Of%20Engineering%20And%20Technology%20%7C%20Best%20Engineering%20College%20in%20Hyderabad!5e0!3m2!1sen!2sin!4v1642243555361!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  		</section>
+  		
+  		<!-- contact us -->
+  		<section class="contact-us">
+  			<div class = "contact-row">
+  				<div class="contact-col">
+  					<!--each ingredient 1-->
+  					<div>
+  						<i class="fa fa-home"></i>
+  						<span>
+  							<h5>H.No.4-1-1001/1045/<br>878B & 3-2,</h5>
+  							<p>King Koti Road, Abids</p>
+  							<p>Hyderabad - 500001</p>
+  							</span>
+  					</div>
+  					<!--each ingredient 2-->
+  					<div>
+  						<i class="fa fa-phone"></i>
+  						<span>
+  							<h5> 040 2475 3445 </h5> 
+  						</span> 		
+  					</div>
+  					<!-- each ingredient 3-->
+  					<div>
+  						<i class="fa fa-envelope"></i>
+  						<span>
+  							<h5>info@methodist.edu.in
+  							</span>
+  					</div>
+  					<!-- each ingredient 4-->
+  					<div>
+  						<i class="fa fa-globe"></i>
+  						<span>
+  							<h5> info@methodist.edu.in </h5>
+  							<p>King Koti Road, Abids</p>
+  							<p>Hyderabad - 500001</p>
+  							</span>
+  					</div>  					
+  				</div>
+  				
+  				<div class="contact-col">
+  					<h3> Any Feedbacks? </h3>
+  					<p> Fill this form and report us </p>
+  					<br>
+  					<form action="contacts.php" method="post" target="_blank">
+  						<input type="text" name="name" placeholder="Enter your name" required>
+  						<input type="email" name="email" placeholder="Enter your email" required>
+  						<input type="text" name="subject" placeholder="Enter your subject" required>
+  						<textarea rows="8" name="message" placeholder="Enter your message" required></textarea>
+  						<button type="submit" class="">Send Message</button>
+  					</form>
+  				</div>
+  				
+  			</div>
+  		</section>
+  		
+  
+   <!-- Social Links -->
+   <section class="social_links">
+   		<h3> CONNECT US THROUGH <span style="color: orange;"> Social Media</span></h3>
+   		<br>
+   		<p> Follow us on below links to stay updated about college notifications</p>
+   		<br>
+   			<div class="icons">
+   					<a href="https://www.facebook.com/Methodistofficial/" target="_blank"><i class="fa fa-facebook fa-4x" id="facebook"></i></a>
+   					<a href="https://instagram.com/mcethyderabad?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram fa-4x" id="instagram"></i></a>
+   					<a href="https://twitter.com/mcethyderabad" target="_blank"><i class="fa fa-twitter fa-4x" id="twitter"></i></a>
+   					<a href="https://www.linkedin.com/in/methodist-college-engineering-and-technology-alumni-47b2a41a2" target="_blank"><i class="fa fa-linkedin fa-4x" id="linkedin"></i></a>
+   			</div>
+   </section>
+   
+  <!-- COPYRIGHTS -->
+   <section class="copyright">
+   	<hr>
+   	<br>
+   		<h4>© METHODIST COLLEGE OF<br> <span style="color: orange">ENGINEERING & TECHNOLOGY, 2021.</span>	</h4>
+   		<p>All rights reserved.</p>
+   		<br>
+   		<p class="signature"> Made with <i class="fa fa-heart-o"></i> by PraVeEn and YaSeeR</p>
+   </section>
+  
+ <!-- js file for toggle -->
+	<script type="text/javascript">
+		var navLinks = document.getElementById("navLinks");
+		
+		function showMenu(){
+				navLinks.style.right = "0";
+		}
+		
+		function hideMenu(){
+				navLinks.style.right = "-200px";
+		}
+		
+	</script>
+  </body>
+</html>

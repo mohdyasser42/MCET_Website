@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Department-Methodist college of engineering & technology</title>
+    <link rel="stylesheet" href="MCET_files/course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+</head>
+<body>
+   
+    <section class="header">
+        <nav>
+                <a href="index.html"><img src="MCET_files/source_files/title.png" alt="this is png" class="title_png"></a>
+                <!-- all the title links provided here-->
+                <div class="nav_links" id="navLinks">
+                        <i class="fa fa-times fa-2x" aria-hidden="true" onclick="hideMenu()"></i>
+                        <ul>
+                                    <li><a href="index.html" target="_self"> HOME </a></li>
+                                    <li><a href="course.html" target="_self"> COURSES </a></li>
+                                    <li><a href="department.html">DEPARTMENT </a></li>
+                                    <li><a href="comment forum/comment_forum.html"> STUDENT CORNER </a></li>
+                                    <li><a href="contact_us.html"> CONTACT US </a></li>
+                                  <li><a href="about_us.html"> ABOUT US</a></li>
+                        </ul>
+                </div>
+                <i class="fa fa-bars fa-2x" aria-hidden="true" id="menuOpen" onclick="showMenu()"></i>
+            </nav>
+    </section>
+
+    <!-- sem subjects -->
+    <section class="sec1">
+        <div class="div1">
+        <h1>BE (COMPUTER SCIENCE ENGINEERING)</h1>
+        <br>
+        <h3>V Semester AICTE Model Curriculum.</h3>
+        <br>
+        </div>
+        <div class="div2">
+            <ul class="sub-btn">
+                <li>
+                    <button onclick="window.open('MCET_files/Subjects/SE.html')" class="subject1">SOFTWARE ENGINEERING</button>
+                </li>
+                <li>
+                    <button onclick="window.open('MCET_files/Subjects/OS.html')" class="subject2">&nbsp; &nbsp;OPERATING SYSTEMS &nbsp;</button>
+                </li>
+                <li>
+                    <button onclick="window.open('MCET_files/Subjects/ALC.html')" class="subject3">THEORY OF COMPUTATION</button>
+                </li>
+            </ul>
+
+            <ul class="sub-btn sub-btn-1">
+                <li>
+                    <button onclick="window.open('MCET_files/Subjects/PE-I.html')" class="subject4">PROFESSIONAL ELECTIVE-I</button>
+                </li>
+                <li>
+                    <button onclick="window.open('MCET_files/Subjects/PE-II.html')" class="subject5">PROFESSIONAL ELECTIVE-II</button>
+                </li>
+                <li>
+                    <button onclick="window.open('MCET_files/Subjects/PE-III.html')" class="subject6">PROFESSIONAL ELECTIVE-III</button>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+    
+    <!-- Social Links -->
+<section class="social_links">
+    
+   		<h3> CONNECT US THROUGH <span style="color: orange;"> Social Media</span></h3>
+   		<br>
+  		<p> Follow us on below links to stay updated about college notifications</p>
+   		<br>
+   			<div class="icons">
+   					<a href="https://www.facebook.com/Methodistofficial/" target="_blank"><i class="fa fa-facebook fa-4x" id="facebook"></i></a>
+   					<a href="https://instagram.com/mcethyderabad?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram fa-4x" id="instagram"></i></a>
+   					<a href="https://twitter.com/mcethyderabad" target="_blank"><i class="fa fa-twitter fa-4x" id="twitter"></i></a>
+   					<a href="https://www.linkedin.com/in/methodist-college-engineering-and-technology-alumni-47b2a41a2" target="_blank"><i class="fa fa-linkedin fa-4x" id="linkedin"></i></a>
+   			</div> 
+   </section>
+   
+  <!-- COPYRIGHTS -->
+  <section class="copyright">
+   	<hr>
+   	<br>
+   		<h4>© METHODIST COLLEGE OF<br> <span style="color: orange">ENGINEERING & TECHNOLOGY, 2021.</span>	</h4>
+   		<p>All rights reserved.</p>
+   		<br>
+   		<p class="signature"> Made with <i class="fa fa-heart-o"></i> by PraVeEn and YaSSeR</p>
+   </section> 
+
+   <!-- js file for toggle -->
+	<script type="text/javascript">
+		var navLinks = document.getElementById("navLinks");
+		
+		function showMenu(){
+				navLinks.style.right = "0";
+		}
+		
+		function hideMenu(){
+				navLinks.style.right = "-200px";
+		}
+	</script>
+  </body>
+</html>
